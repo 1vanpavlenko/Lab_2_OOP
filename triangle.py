@@ -7,12 +7,12 @@ class Triangle:
 
         a, b, c = list_of_sides
 
+        assert a > 0 and b > 0 and c > 0
         assert c < a + b
 
         self.a = side_a
         self.b = side_b
         self.c = side_c
-
 
     def perimeter(self):
         return self.a + self.b + self.c
